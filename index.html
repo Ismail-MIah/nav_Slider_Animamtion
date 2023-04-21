@@ -12,34 +12,44 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <!-- navbar Start -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- navbar End -->
+    <div class="container">
+      <!-- navbar Start -->
+      <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          <a href="#" class="navbar-brand">
+            <img src="img/man-icon.png" width="50px" alt="" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Tutorial</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contract</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- navbar End -->
+    </div>
     <script src="JS/main.js"></script>
     <script src="JS/bootstrap.js"></script>
   </body>
