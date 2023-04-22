@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .icons {
+        background-color: #fff;
+      }
+      .navbar ul li a {
+        position: relative;
+        margin-right: 50px;
+        align-content: center;
+      }
+      .nav-link {
+        font-size: 20px;
+      }
+
+      .navbar ul li a::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px;
+        left: 0;
+        bottom: 0;
+        background: rgb(224, 204, 204);
+        transform-origin: left;
+        transition: transform 1s linear;
+        transform: scaleX(0);
+      }
+      .navbar ul li a:hover::before {
+        transform: scaleX(1);
+        transform-origin: right;
+      }
+      @media (max-width: 991.98px) {
+        .navbar ul {
+          margin-right: 700px;
+        }
+        .div-top-margin {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <button
+        class="navbar-toggler icons"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <img
+        src="img/man-icon.png"
+        class="ml-auto"
+        style="width: 40px; height: 40px"
+        alt=""
+      />
+      <a class="navbar-brand text-white mr-auto pl-2" href="#">JCTC </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Link</a>
+          </li>
+        </ul>
+        <div class="navbar-brand ml-auto div-top-margin">
+          <a
+            href="#"
+            class="text-white bg-dark p-2"
+            style="text-decoration: none"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="text-white bg-dark p-2"
+            style="text-decoration: none"
+            >Create Account</a
+          >
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
